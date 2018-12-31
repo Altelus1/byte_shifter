@@ -25,15 +25,6 @@ def on_press(key):
 					
 		elif key == Key.right:
 			shift_total += 1
-
-		erase_prev()
-		print_stdout("\b")
-		erase_prev()
-		print_stdout("\b")
-		erase_prev()
-		print_stdout("\b")
-		erase_prev()
-		print_stdout("\b")
 		
 		print("SHIFTED: [{}]".format(shift_total),end="")
 		print_stdout(shift("\n"+contents,shift_total))
